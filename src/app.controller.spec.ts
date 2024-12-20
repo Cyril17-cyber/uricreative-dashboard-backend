@@ -15,7 +15,7 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Cyril Asogwa || UriCreative Fullstack Software Engineer Assessment!"', () => {
+    it('should return "Cyril Asogwa || UriCreative Fullstack Software Engineer Assessment"', () => {
       expect(appController.getHello()).toBe(
         'Cyril Asogwa || UriCreative Fullstack Software Engineer Assessment',
       );
