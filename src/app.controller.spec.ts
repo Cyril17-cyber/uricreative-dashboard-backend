@@ -15,8 +15,10 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return "Cyril Asogwa || UriCreative Fullstack Software Engineer Assessment!"', () => {
+      expect(appController.getHello()).toBe(
+        'Cyril Asogwa || UriCreative Fullstack Software Engineer Assessment',
+      );
     });
   });
 });

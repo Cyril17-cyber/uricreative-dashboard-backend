@@ -14,14 +14,14 @@ describe('JobApplicationService', () => {
 
   it('should return all applications', () => {
     const applications = service.getAllApplications();
-    expect(applications.length).toBe(3);
+    expect(applications.length).toBe(6);
     expect(applications[0].jobTitle).toBe('Frontend Developer');
   });
 
   it('should return correct statistics', () => {
     const stats = service.getStats();
-    expect(stats.total).toBe(3);
-    expect(stats.byStatus['accepted']).toBe(1);
+    expect(stats.total).toBe(6);
+    expect(stats.byStatus['accepted']).toBe(3);
     expect(stats.byMonth['2024-10']).toBe(1);
   });
 });

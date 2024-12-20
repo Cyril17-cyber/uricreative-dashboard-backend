@@ -13,20 +13,20 @@ describe('JobApplicationController', () => {
         jobTitle: 'Frontend Developer',
         companyName: 'TechCorp',
         status: 'accepted',
-        dateApplied: '2024-10-12',
+        dateApplied: '2024-12-12',
       },
       {
         id: '2',
         jobTitle: 'Backend Developer',
         companyName: 'UriCreative',
         status: 'pending',
-        dateApplied: '2024-09-19',
+        dateApplied: '2024-11-19',
       },
     ]),
     getStats: jest.fn(() => ({
       total: 2,
       byStatus: { accepted: 1, pending: 1 },
-      byMonth: { '2024-10': 1, '2024-09': 1 },
+      byMonth: { '2024-12': 1, '2024-11': 1 },
     })),
   };
 
